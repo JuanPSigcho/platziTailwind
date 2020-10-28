@@ -2,15 +2,12 @@
 
 @tailwind utilities;
 
-@tailwind components; 
+@tailwind components;
 
-@layer utilities {
-    .zoom { 
-        transform: scale(2);
-    }
+.rotate-45 {
+  transform: rotate(45deg);
+}
 
-
-    .rotate-45 {
-        transform: rotate(45deg);
-    }
+.zoom {
+  transform: scale(2);
 }
