@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss build css/tailwind.css -o public/css/style.css && live-server public",
+    "build": "npx tailwindcss build css/tailwind.css -o public/css/style.css",
     "dev": "npx tailwindcss build css/tailwind.css -o public/css/styles.css --watch"
   },
   "keywords": [],
