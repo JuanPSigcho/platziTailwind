@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss build css/tailwind.css -o public/css/style.css"
+    "build": "npx tailwindcss build css/tailwind.css -o public/css/style.css",
+    "dev": "npx tailwindcss build css/tailwind.css -o public/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.0.1",
+    "live-server": "^1.2.1",
     "postcss-cli": "^8.1.0",
     "tailwindcss": "^1.8.12"
   }
