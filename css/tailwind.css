@@ -4,14 +4,42 @@
 
 @tailwind components;
 
-@responsive {
-  .rotate-45 {
-    transform: rotate(45deg);
-  }
+
+.alert {
+  @apply p-3 m-5 rounded text-gray-600 bg-gray-100 text-center w-1/2 ;
 }
+
+.alert-danger {
+  @apply bg-red-600;
+}
+
+.alert-warning {
+  @apply bg-orange-600;
+}
+
+.alert-info {
+  @apply bg-blue-400;
+}
+
 
 @variants hover {
   .zoom {
     transform: scale(2);
+  }
+
+  .button{
+    background-color: #318D2C;
+    color: #FFF743;
+    border: 2px solid #C85D57;
+  }
+}
+
+
+@variants active {
+
+  .button{
+    background-color: #000;
+    color: #FFF743;
+    border: 2px solid #FFF743;
   }
 }
