@@ -18,12 +18,13 @@
 }
 
 .btn {
-  @apply rounded shadow-xl py-1 px-4 mx-auto block bg-gray-500;
+  @apply rounded shadow-xl py-1 px-4 block bg-gray-500;
 }
 
 .btn-primary {
   @apply bg-yellow-600;
 }
+
 .btn:hover {
   @apply shadow-none bg-gray-700 text-white;
 }
