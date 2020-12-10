@@ -4,7 +4,6 @@
 
 @tailwind components;
 
-
 .form-control {
   @apply w-full leading-snug py-1 px-4 rounded border text-gray-800  border-blue-300 bg-gray-300;
 }
@@ -15,6 +14,14 @@
 
 .form-control:focus {
   @apply outline-none shadow-outline;
+}
+
+.card-dishes {
+  @apply relative mx-2 shadow-lg  p-2 bg-white rounded-lg -mt-2;
+}
+
+.title-card {
+  @apply text-xl tracking-tight font-semibold text-gray-900 uppercase;
 }
 
 .btn {
@@ -29,19 +36,6 @@
   @apply shadow-none bg-gray-700 text-white;
 }
 
-/* Apply Directive */
-h1{
-  @apply text-3xl text-green-700 font-semibold;
-}
-
-h2{
-  @apply text-2xl text-green-400 font-semibold;
-}
-
-h3{
-  @apply text-xl text-yellow-700 font-semibold;
-}
-
 /* Variants */
 
 @variants hover {
@@ -49,18 +43,17 @@ h3{
     transform: scale(2);
   }
 
-  .button{
-    background-color: #318D2C;
-    color: #FFF743;
-    border: 2px solid #C85D57;
+  .button {
+    background-color: #318d2c;
+    color: #fff743;
+    border: 2px solid #c85d57;
   }
 }
 
 @variants active {
-
-  .button{
+  .button {
     background-color: #000;
-    color: #FFF743;
-    border: 2px solid #FFF743;
+    color: #fff743;
+    border: 2px solid #fff743;
   }
 }
