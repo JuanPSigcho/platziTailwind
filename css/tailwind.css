@@ -4,42 +4,56 @@
 
 @tailwind components;
 
-
-.alert {
-  @apply p-3 m-5 rounded text-gray-600 bg-gray-100 text-center w-1/2 ;
+.form-control {
+  @apply w-full leading-snug py-1 px-4 rounded border text-gray-800  border-blue-300 bg-gray-300;
 }
 
-.alert-danger {
-  @apply bg-red-600;
+.form-control:hover {
+  @apply bg-white;
 }
 
-.alert-warning {
-  @apply bg-orange-600;
+.form-control:focus {
+  @apply outline-none shadow-outline;
 }
 
-.alert-info {
-  @apply bg-blue-400;
+.card-dishes {
+  @apply relative mx-2 shadow-lg  p-2 bg-white rounded-lg -mt-2;
 }
 
+.title-card {
+  @apply text-xl tracking-tight font-semibold text-gray-900 uppercase;
+}
+
+.btn {
+  @apply rounded shadow-xl py-1 px-4 block bg-gray-500;
+}
+
+.btn-primary {
+  @apply bg-yellow-600;
+}
+
+.btn:hover {
+  @apply shadow-none bg-gray-700 text-white;
+}
+
+/* Variants */
 
 @variants hover {
   .zoom {
     transform: scale(2);
   }
 
-  .button{
-    background-color: #318D2C;
-    color: #FFF743;
-    border: 2px solid #C85D57;
+  .button {
+    background-color: #318d2c;
+    color: #fff743;
+    border: 2px solid #c85d57;
   }
 }
 
-
 @variants active {
-
-  .button{
+  .button {
     background-color: #000;
-    color: #FFF743;
-    border: 2px solid #FFF743;
+    color: #fff743;
+    border: 2px solid #fff743;
   }
 }
